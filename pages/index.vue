@@ -1,4 +1,9 @@
 <script setup lang="ts">
+useHead({
+  bodyAttrs: {
+    class: 'my-body-class'
+  }
+})
 const { data } = await useFetch('/api/hello')
 
 </script>

@@ -19,6 +19,10 @@ async function randomTodo() {
   pending.value = unref(data.pending)
   error.value = unref(data.error)
 }
+useSeoMeta({
+  title: 'About page',
+  description: 'This is the about page'
+})
 onMounted(() => {
   randomTodo()
 })

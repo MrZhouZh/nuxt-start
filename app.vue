@@ -1,5 +1,7 @@
 <script setup lang="ts">
-const open = ref(false)
+useHead({
+  titleTemplate: '%s - Meta tags'
+})
 </script>
 
 <template>
@@ -25,6 +27,12 @@ const open = ref(false)
     </footer>
   </div>
 </template>
+
+<style>
+body.my-body-class {
+  background-color: #eee;
+}
+</style>
 
 <style scoped>
 nav, footer {
